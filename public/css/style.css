@@ -78,4 +78,21 @@ form .butons {
 form .button {
     width: 35%;
 }
+ /* style view buscar */
 
+ #l_buscar  {
+    display: flex;
+    align-items: baseline;
+ }
+
+ form button{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 3px;
+ }
+
+ form button:hover {
+    background-color: #e0833c;
+    border: 1px solid #f2f2f2;
+ }
