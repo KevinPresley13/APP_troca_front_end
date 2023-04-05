@@ -11,6 +11,13 @@ header {
     justify-content: center;
     background-color: black;
 }
+hr {
+    border: 2px dashed #000;
+    margin-bottom: 5px;
+}
+.v{
+    display: block !important;
+}
 
 .logo img{
     width: 100px;
@@ -40,35 +47,47 @@ nav a {
 
 /* style form page*/
 
+section {
+    background-color: #e0833c;
+}
+
 form {
     display: flex;
     flex-direction: column;
     width: 100vw;
     padding: 15px 10px;
+    text-align: center;
 }
 form label {
     display: block;
     margin-top: 15px;
 }
 form h4{
-    font-style: italic;
+    font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 21px;
 }
 form input {
     width: 100%;
     margin-bottom: 10px;
     font-size: 16px;
 }
+
+form input::placeholder{
+    color: #f2f2f2;
+}
 form input[type=text],input[type=number],input[type=date] {
     border: none;
-    border-bottom: 2px solid #675d5d;
+    border-bottom: 2px solid #fff;
     padding: 2px;
+    background-color: #e0833c;
+    color: #fff;
 }
 
 form input[type=text]:focus,input[type=number]:focus,input[type=date]:focus {
     outline: none;
-    border-bottom: 2px solid #d19c0b;
+    border-bottom: 2px solid #210404;
 }
 
 form .butons {
@@ -84,7 +103,12 @@ form .button {
     display: flex;
     align-items: baseline;
  }
-
+.cliente {
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content:space-between;
+}
  form button{
     font-size: 14px;
     font-weight: 400;
@@ -96,3 +120,30 @@ form .button {
     background-color: #e0833c;
     border: 1px solid #f2f2f2;
  }
+ ul {
+    padding: 10px;
+ }
+ li {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+ }
+
+ /* styke todas as trocas*/
+
+ .cliente {
+    align-items: center;
+    margin-bottom: 5px;
+ }
+ .cliente button {
+    font-size: 16px;
+ }
+.info {
+    display: none;;
+}
+.info h6 {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 24px;
+}
