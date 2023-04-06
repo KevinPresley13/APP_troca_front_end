@@ -11,3 +11,9 @@ for(let i= 0; i< viewBtn.length;i++){
     });
     console.log(viewBtn[i])
 };
+const apagar = async (id)=>{
+    await fetch(`http://localhost:3000/troca/${id}`,{
+        method: 'DELETE'
+    });
+    window.location.reload();
+};
