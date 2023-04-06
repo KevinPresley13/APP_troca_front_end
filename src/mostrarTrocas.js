@@ -21,6 +21,7 @@ const list = async ()=>{
                 <h6>filtro: ${item.filtro}</h6>
                 <h6>odometro: ${item.odometro}</h6>
                 <h6>proxima troca: ${dataProximaTroca}</h6>
+                <button onclick="apagar(${item.id})" id="apagar">excluir</button>
             </div>
         </li>
         `;
