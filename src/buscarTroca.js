@@ -12,7 +12,7 @@ let busca = async (nome)=>{
     let result = await fetch(`http://localhost:3000/trocas/busca?busca=${nome}`,{
         method: 'GET',
         headers:{
-            'Content-Type':'aplication/json'
+            'Content-Type':'application/json'
         }
     });
     let json = await result.json();
@@ -29,7 +29,7 @@ let busca = async (nome)=>{
                 <button id="button">ver</button>
             </div>
             <div class="info">
-                <h6>telefone:${item.telefone_cliente}</h6>
+                <h6>telefone: ${item.telefone_cliente}</h6>
                 <h6>oleo: ${item.nome_oleo}</h6>
                 <h6>filtro: ${item.filtro}</h6>
                 <h6>odometro: ${item.odometro}</h6>

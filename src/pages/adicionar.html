@@ -15,11 +15,11 @@
         </div>
     </header>
     <section>
-        <form action="" method="get">
+        <form action="http://localhost:3000/troca" method="post">
             <h1>ADICIONAR TROCA</h1>
-            <label for="name_cliente">
+            <label for="nome_cliente">
                 <h4>nome</h4>
-                <input type="text" name="name_cliente" placeholder="Digite o nome do cliente" id="nome">
+                <input type="text" name="nome_cliente" placeholder="Digite o nome do cliente" id="name">
             </label>
             <label for="phone">
                 <h4>telefone</h4>
@@ -46,11 +46,11 @@
                 <input type="date" name="proxima_troca"  id="proxima_troca">
             </label>
             <div class="butons">
-                <input class="button" type="submit" value="salvar">
-                <input class="button" type="button" value="cancelar">
+                <input class="button" type="submit" value="salvar" id="enviar">
+                <input class="button" type="button" value="cancelar" id="cancelar">
             </div>
         </form>
     </section>
-
+    <script src="../addTroca.js"></script>
 </body>
 </html>
